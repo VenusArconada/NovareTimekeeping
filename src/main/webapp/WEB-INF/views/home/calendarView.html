@@ -9,12 +9,12 @@
 <div th:fragment="calendarView">
 <div class = "containter">
 <div class = "row-fluid ">
-	<span class = "lead span3" id = "month">Month</span><span> </span>
+	<span class = "lead span3" id = "month">Month</span><span>&nbsp;</span>
 	<span class = "lead span3" id = "year">Year</span>
+	
 </div>
 <div >
 	<select id = "monthlist" onchange="updateCalendarView()">
-	<optgroup>
 		<option value="0">January</option>
 		<option value="1">February</option>
 		<option value="2">March</option>
@@ -27,7 +27,6 @@
 		<option value="9">October</option>
 		<option value="10">November</option>
 		<option value="11">December</option>
-	</optgroup>
 	</select>
 	<select   id = "yearlist" onchange="updateCalendarView()">
 		<option value="2014">2014</option>
@@ -41,6 +40,7 @@
 		<option value="2006">2006</option>
 	</select>
 </div>
+	<p>&nbsp;</p>
 	<div id = "table">
 	<table class = "table table-bordered" align = "center" id = "calendartable">
 		<tr class = "text-center">
